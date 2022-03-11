@@ -1,0 +1,97 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "core.config_entries",
+    "data": {
+        "entries": [
+            {
+                "entry_id": "89a90a2c959dbd63efed7c24a89c3a7e",
+                "version": 1,
+                "domain": "hassio",
+                "title": "Supervisor",
+                "data": {},
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "system",
+                "unique_id": "hassio",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "4dfd6ec1d3280c48b39cba62f5497b5e",
+                "version": 1,
+                "domain": "met",
+                "title": "Home",
+                "data": {
+                    "track_home": true
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "onboarding",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "ba8dfee1af1a27af7f1ba7faf2d563ad",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "ONEPLUS A5010",
+                "data": {
+                    "app_id": "io.homeassistant.companion.android",
+                    "app_name": "Home Assistant",
+                    "app_version": "2022.2.1-full (2058)",
+                    "device_name": "ONEPLUS A5010",
+                    "manufacturer": "OnePlus",
+                    "model": "ONEPLUS A5010",
+                    "os_name": "Android",
+                    "os_version": "29",
+                    "supports_encryption": false,
+                    "app_data": {
+                        "push_websocket_channel": true,
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+                        "push_token": "ceeSnxkQSGmgURiSqZP6Wq:APA91bFsOx1lSrIm0Onvu92Bq95aiG_Ph6P3N5InPhVqABz_hhuOCFYFZa8HuZtq95mvT25aDlYaIrtprS3zIiJrniSi5JmH7rWF8eHpCXUPRjK1CsNaZkIhBl7MMiebqoDY5_BvZ5qY"
+                    },
+                    "device_id": "c9426bfbaa4737ac",
+                    "webhook_id": "99e35bad94923edd7c8c2e32a14de32526a3e52fcbf82247076fff8bfb96eb89",
+                    "user_id": "c775c3e89d48449abf6ccba39d7643b0"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "registration",
+                "unique_id": "io.homeassistant.companion.android-c9426bfbaa4737ac",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "77c3b0004c1c078ba460a6037bba6bed",
+                "version": 1,
+                "domain": "mqtt",
+                "title": "vmd52268.contaboserver.net",
+                "data": {
+                    "broker": "broker.mqttdashboard.com",
+                    "port": 1883,
+                    "birth_message": {
+                        "topic": "homeassistant/status",
+                        "payload": "online",
+                        "qos": 0,
+                        "retain": false
+                    },
+                    "will_message": {
+                        "topic": "homeassistant/status",
+                        "payload": "offline",
+                        "qos": 0,
+                        "retain": false
+                    },
+                    "discovery": true
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            }
+        ]
+    }
+}

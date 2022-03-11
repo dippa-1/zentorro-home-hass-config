@@ -1,0 +1,754 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "trace.saved_traces",
+    "data": {
+        "automation.1647008246424": [
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "137026803f87412a365b3cb93ff54fa9",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-03-11T14:25:08.993636+00:00",
+                        "finish": "2022-03-11T14:25:08.998997+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1647008246424",
+                    "trigger": "state of button.steckose_flur_on",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-03-11T14:25:08.993679+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.buttontest",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-03-11T14:25:05.004054+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1647008246424",
+                                            "friendly_name": "ButtonTest"
+                                        },
+                                        "last_changed": "2022-03-11T14:24:45.440687+00:00",
+                                        "last_updated": "2022-03-11T14:25:05.008549+00:00",
+                                        "context": {
+                                            "id": "7ef28f7b4f4ac2877d81700f606c6b7b",
+                                            "parent_id": "f954781692ac71a87d85d4e8bd5ffda6",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "button.steckose_flur_on",
+                                        "from_state": {
+                                            "entity_id": "button.steckose_flur_on",
+                                            "state": "2022-03-11T14:25:05.000217+00:00",
+                                            "attributes": {
+                                                "friendly_name": "Steckose Flur; ON"
+                                            },
+                                            "last_changed": "2022-03-11T14:25:05.000268+00:00",
+                                            "last_updated": "2022-03-11T14:25:05.000268+00:00",
+                                            "context": {
+                                                "id": "f954781692ac71a87d85d4e8bd5ffda6",
+                                                "parent_id": null,
+                                                "user_id": "c775c3e89d48449abf6ccba39d7643b0"
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "button.steckose_flur_on",
+                                            "state": "2022-03-11T14:25:08.992175+00:00",
+                                            "attributes": {
+                                                "friendly_name": "Steckose Flur; ON"
+                                            },
+                                            "last_changed": "2022-03-11T14:25:08.992225+00:00",
+                                            "last_updated": "2022-03-11T14:25:08.992225+00:00",
+                                            "context": {
+                                                "id": "b46f826d171087a8a293932d93d964aa",
+                                                "parent_id": null,
+                                                "user_id": "c775c3e89d48449abf6ccba39d7643b0"
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of button.steckose_flur_on"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-03-11T14:25:08.994991+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "e93e2370a4269353cc7ec976ab85be13",
+                                        "parent_id": "b46f826d171087a8a293932d93d964aa",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "mqtt",
+                                        "service": "publish",
+                                        "service_data": {
+                                            "topic": "433MHzBridge/pairing",
+                                            "retain": true,
+                                            "payload": "{device: Hallo Nick woop woop, state: on}"
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1647008246424",
+                        "alias": "ButtonTest",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "button.steckose_flur_on"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "service": "mqtt.publish",
+                                "data": {
+                                    "topic": "433MHzBridge/pairing",
+                                    "retain": true,
+                                    "payload": "{device: {{states('input_text.text1')}}, state: on}"
+                                }
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "e93e2370a4269353cc7ec976ab85be13",
+                        "parent_id": "b46f826d171087a8a293932d93d964aa",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "137026803f87412a365b3cb93ff54fa9",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-03-11T14:25:08.993636+00:00",
+                        "finish": "2022-03-11T14:25:08.998997+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1647008246424",
+                    "trigger": "state of button.steckose_flur_on"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "065f20cceb6e3fa2516207ea67ebeacb",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-03-11T14:26:30.819425+00:00",
+                        "finish": "2022-03-11T14:26:30.824934+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1647008246424",
+                    "trigger": "state of button.steckose_flur_on",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-03-11T14:26:30.819468+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.buttontest",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-03-11T14:25:08.993753+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1647008246424",
+                                            "friendly_name": "ButtonTest"
+                                        },
+                                        "last_changed": "2022-03-11T14:26:27.345436+00:00",
+                                        "last_updated": "2022-03-11T14:26:27.345436+00:00",
+                                        "context": {
+                                            "id": "4735c870c7f6058a4f630abb69d58270",
+                                            "parent_id": null,
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "button.steckose_flur_on",
+                                        "from_state": {
+                                            "entity_id": "button.steckose_flur_on",
+                                            "state": "2022-03-11T14:25:08.992175+00:00",
+                                            "attributes": {
+                                                "friendly_name": "Steckose Flur; ON"
+                                            },
+                                            "last_changed": "2022-03-11T14:25:08.992225+00:00",
+                                            "last_updated": "2022-03-11T14:25:08.992225+00:00",
+                                            "context": {
+                                                "id": "b46f826d171087a8a293932d93d964aa",
+                                                "parent_id": null,
+                                                "user_id": "c775c3e89d48449abf6ccba39d7643b0"
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "button.steckose_flur_on",
+                                            "state": "2022-03-11T14:26:30.818227+00:00",
+                                            "attributes": {
+                                                "friendly_name": "Steckose Flur; ON"
+                                            },
+                                            "last_changed": "2022-03-11T14:26:30.818277+00:00",
+                                            "last_updated": "2022-03-11T14:26:30.818277+00:00",
+                                            "context": {
+                                                "id": "b7b833d388779072025a0da54e56bd24",
+                                                "parent_id": null,
+                                                "user_id": "c775c3e89d48449abf6ccba39d7643b0"
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of button.steckose_flur_on"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-03-11T14:26:30.821070+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "b899bbba14723b998a41929d4598ab9b",
+                                        "parent_id": "b7b833d388779072025a0da54e56bd24",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "mqtt",
+                                        "service": "publish",
+                                        "service_data": {
+                                            "topic": "433MHzBridge/pairing",
+                                            "retain": true,
+                                            "payload": "{device: \"Hallo Nick woop woop\", state: \"on\"}"
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1647008246424",
+                        "alias": "ButtonTest",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "button.steckose_flur_on"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "service": "mqtt.publish",
+                                "data": {
+                                    "topic": "433MHzBridge/pairing",
+                                    "retain": true,
+                                    "payload": "{device: \"{{states('input_text.text1')}}\", state: \"on\"}"
+                                }
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "b899bbba14723b998a41929d4598ab9b",
+                        "parent_id": "b7b833d388779072025a0da54e56bd24",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "065f20cceb6e3fa2516207ea67ebeacb",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-03-11T14:26:30.819425+00:00",
+                        "finish": "2022-03-11T14:26:30.824934+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1647008246424",
+                    "trigger": "state of button.steckose_flur_on"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "9b7a66c3bf57142b4ef326141d5c7035",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-03-11T19:56:03.881645+00:00",
+                        "finish": "2022-03-11T19:56:03.886924+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1647008246424",
+                    "trigger": "state of button.steckose_flur_on",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-03-11T19:56:03.881698+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.buttontest",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-03-11T14:26:30.819536+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1647008246424",
+                                            "friendly_name": "ButtonTest"
+                                        },
+                                        "last_changed": "2022-03-11T19:30:06.849661+00:00",
+                                        "last_updated": "2022-03-11T19:30:06.849661+00:00",
+                                        "context": {
+                                            "id": "8588448e394dfa6b0418805c6f167d5b",
+                                            "parent_id": null,
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "button.steckose_flur_on",
+                                        "from_state": {
+                                            "entity_id": "button.steckose_flur_on",
+                                            "state": "2022-03-11T14:26:30.818227+00:00",
+                                            "attributes": {
+                                                "friendly_name": "Steckose Flur; ON"
+                                            },
+                                            "last_changed": "2022-03-11T19:30:07.503613+00:00",
+                                            "last_updated": "2022-03-11T19:30:07.503613+00:00",
+                                            "context": {
+                                                "id": "5541b89b193c313a9f1b73fe97bd3dfb",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "button.steckose_flur_on",
+                                            "state": "2022-03-11T19:56:03.880816+00:00",
+                                            "attributes": {
+                                                "friendly_name": "Steckose Flur; ON"
+                                            },
+                                            "last_changed": "2022-03-11T19:56:03.880858+00:00",
+                                            "last_updated": "2022-03-11T19:56:03.880858+00:00",
+                                            "context": {
+                                                "id": "5078668df200b7083aff219fa82a2f84",
+                                                "parent_id": null,
+                                                "user_id": "c775c3e89d48449abf6ccba39d7643b0"
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of button.steckose_flur_on"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-03-11T19:56:03.883045+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "709427f459b54a77cba7d8413cba9ecd",
+                                        "parent_id": "5078668df200b7083aff219fa82a2f84",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "mqtt",
+                                        "service": "publish",
+                                        "service_data": {
+                                            "topic": "433MHzBridge/pairing",
+                                            "retain": true,
+                                            "payload": "{device: \"Hallo Nick woop woop\", state: \"on\"}"
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1647008246424",
+                        "alias": "ButtonTest",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "button.steckose_flur_on"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "service": "mqtt.publish",
+                                "data": {
+                                    "topic": "433MHzBridge/pairing",
+                                    "retain": true,
+                                    "payload": "{device: \"{{states('input_text.text1')}}\", state: \"on\"}"
+                                }
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "709427f459b54a77cba7d8413cba9ecd",
+                        "parent_id": "5078668df200b7083aff219fa82a2f84",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "9b7a66c3bf57142b4ef326141d5c7035",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-03-11T19:56:03.881645+00:00",
+                        "finish": "2022-03-11T19:56:03.886924+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1647008246424",
+                    "trigger": "state of button.steckose_flur_on"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "77bbd68dd5e9986decc3b0798bebf632",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-03-11T19:56:05.728633+00:00",
+                        "finish": "2022-03-11T19:56:05.733157+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1647008246424",
+                    "trigger": "state of button.steckose_flur_on",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-03-11T19:56:05.728678+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.buttontest",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-03-11T19:56:03.881765+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1647008246424",
+                                            "friendly_name": "ButtonTest"
+                                        },
+                                        "last_changed": "2022-03-11T19:30:06.849661+00:00",
+                                        "last_updated": "2022-03-11T19:56:03.885911+00:00",
+                                        "context": {
+                                            "id": "709427f459b54a77cba7d8413cba9ecd",
+                                            "parent_id": "5078668df200b7083aff219fa82a2f84",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "button.steckose_flur_on",
+                                        "from_state": {
+                                            "entity_id": "button.steckose_flur_on",
+                                            "state": "2022-03-11T19:56:03.880816+00:00",
+                                            "attributes": {
+                                                "friendly_name": "Steckose Flur; ON"
+                                            },
+                                            "last_changed": "2022-03-11T19:56:03.880858+00:00",
+                                            "last_updated": "2022-03-11T19:56:03.880858+00:00",
+                                            "context": {
+                                                "id": "5078668df200b7083aff219fa82a2f84",
+                                                "parent_id": null,
+                                                "user_id": "c775c3e89d48449abf6ccba39d7643b0"
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "button.steckose_flur_on",
+                                            "state": "2022-03-11T19:56:05.727808+00:00",
+                                            "attributes": {
+                                                "friendly_name": "Steckose Flur; ON"
+                                            },
+                                            "last_changed": "2022-03-11T19:56:05.727847+00:00",
+                                            "last_updated": "2022-03-11T19:56:05.727847+00:00",
+                                            "context": {
+                                                "id": "90eb9f2f48384b25e24cfb370d1e0677",
+                                                "parent_id": null,
+                                                "user_id": "c775c3e89d48449abf6ccba39d7643b0"
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of button.steckose_flur_on"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-03-11T19:56:05.730083+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "5109a7eb5ce30e2b9478ae260cbf7cd4",
+                                        "parent_id": "90eb9f2f48384b25e24cfb370d1e0677",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "mqtt",
+                                        "service": "publish",
+                                        "service_data": {
+                                            "topic": "433MHzBridge/pairing",
+                                            "retain": true,
+                                            "payload": "{device: \"Hallo Nick woop woop\", state: \"on\"}"
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1647008246424",
+                        "alias": "ButtonTest",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "button.steckose_flur_on"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "service": "mqtt.publish",
+                                "data": {
+                                    "topic": "433MHzBridge/pairing",
+                                    "retain": true,
+                                    "payload": "{device: \"{{states('input_text.text1')}}\", state: \"on\"}"
+                                }
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "5109a7eb5ce30e2b9478ae260cbf7cd4",
+                        "parent_id": "90eb9f2f48384b25e24cfb370d1e0677",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "77bbd68dd5e9986decc3b0798bebf632",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-03-11T19:56:05.728633+00:00",
+                        "finish": "2022-03-11T19:56:05.733157+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1647008246424",
+                    "trigger": "state of button.steckose_flur_on"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "e6e78300ff95f001b8d9fff656c19efa",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-03-11T19:56:25.167784+00:00",
+                        "finish": "2022-03-11T19:56:25.172760+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1647008246424",
+                    "trigger": "state of button.steckose_flur_on",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-03-11T19:56:25.167825+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.buttontest",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-03-11T19:56:05.728739+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1647008246424",
+                                            "friendly_name": "ButtonTest"
+                                        },
+                                        "last_changed": "2022-03-11T19:30:06.849661+00:00",
+                                        "last_updated": "2022-03-11T19:56:05.732235+00:00",
+                                        "context": {
+                                            "id": "5109a7eb5ce30e2b9478ae260cbf7cd4",
+                                            "parent_id": "90eb9f2f48384b25e24cfb370d1e0677",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "button.steckose_flur_on",
+                                        "from_state": {
+                                            "entity_id": "button.steckose_flur_on",
+                                            "state": "2022-03-11T19:56:05.727808+00:00",
+                                            "attributes": {
+                                                "friendly_name": "Steckose Flur; ON"
+                                            },
+                                            "last_changed": "2022-03-11T19:56:05.727847+00:00",
+                                            "last_updated": "2022-03-11T19:56:05.727847+00:00",
+                                            "context": {
+                                                "id": "90eb9f2f48384b25e24cfb370d1e0677",
+                                                "parent_id": null,
+                                                "user_id": "c775c3e89d48449abf6ccba39d7643b0"
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "button.steckose_flur_on",
+                                            "state": "2022-03-11T19:56:25.166972+00:00",
+                                            "attributes": {
+                                                "friendly_name": "Steckose Flur; ON"
+                                            },
+                                            "last_changed": "2022-03-11T19:56:25.167015+00:00",
+                                            "last_updated": "2022-03-11T19:56:25.167015+00:00",
+                                            "context": {
+                                                "id": "86ab51abdeae82c860f46eacfb1146a1",
+                                                "parent_id": null,
+                                                "user_id": "c775c3e89d48449abf6ccba39d7643b0"
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of button.steckose_flur_on"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-03-11T19:56:25.169233+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "1283a578784e9642b8decf8069764b92",
+                                        "parent_id": "86ab51abdeae82c860f46eacfb1146a1",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "mqtt",
+                                        "service": "publish",
+                                        "service_data": {
+                                            "topic": "433MHzBridge/pairing",
+                                            "retain": true,
+                                            "payload": "{device: \"Hallo Nick woop woop\", state: \"on\"}"
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1647008246424",
+                        "alias": "ButtonTest",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "button.steckose_flur_on"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "service": "mqtt.publish",
+                                "data": {
+                                    "topic": "433MHzBridge/pairing",
+                                    "retain": true,
+                                    "payload": "{device: \"{{states('input_text.text1')}}\", state: \"on\"}"
+                                }
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "1283a578784e9642b8decf8069764b92",
+                        "parent_id": "86ab51abdeae82c860f46eacfb1146a1",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "e6e78300ff95f001b8d9fff656c19efa",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-03-11T19:56:25.167784+00:00",
+                        "finish": "2022-03-11T19:56:25.172760+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1647008246424",
+                    "trigger": "state of button.steckose_flur_on"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,70 @@
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+button:
+  # test:
+  - platform: mqtt
+    command_topic: 433MHzBridge/pairing
+    name: "Steckose Flur; ON"
+    # command_topic: gen1/control/togglePause
+    # payload_on: '/codeStart: {device: "Steckdose Flur", state: "on"}'
+    # payload_off: "/codeStop"
+  # zentorro_start_learning:
+  - platform: mqtt
+    command_topic: 433MHzBridge/pairing
+    name: "Start learning"
+    icon: mdi:play-outline
+  # zentorro_set_state:
+  - platform: mqtt
+    command_topic: 433MHzBridge/pairing
+    name: "Set state"
+    icon: mdi:power
+  
+
+input_text:
+  text1:
+    name: Text 1
+    mode: text
+  zentorro_new_device_name:
+    name: Device name
+    mode: text
+    icon: mdi:label-outline
+  zentorro_new_device_state:
+    name: State
+    mode: text
+    icon: mdi:toggle-switch-outline
+
+switch:
+  - platform: mqtt
+    command_topic: 433MHzBridge/pairing
+    payload_on: '{device: "{{states.input_text.text1}}", state: "on"}'
+    payload_off: ""
+    payload_available: ""
+    name: "Steckose Flur; ON"
+
+input_select:
+  who_cooks:
+    name: Who cooks today
+    options:
+      - Paulus
+      - Nick
+    initial: Nick
+    icon: mdi:panda
+  zentorro_control_device:
+    name: Device
+    options:
+      - ""
+    icon: mdi:laptop
+  zentorro_control_state:
+    name: State
+    options:
+      - ""
+    icon: mdi:cog-outline

@@ -1,0 +1,801 @@
+{
+    "version": 1,
+    "minor_version": 3,
+    "key": "core.device_registry",
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "89a90a2c959dbd63efed7c24a89c3a7e"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "OS"
+                    ]
+                ],
+                "manufacturer": "Home Assistant",
+                "model": "Home Assistant Operating System",
+                "name": "Home Assistant Operating System",
+                "sw_version": "7.4",
+                "hw_version": null,
+                "entry_type": "service",
+                "id": "4b293184309013fe802f5418bdcd5588",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "4dfd6ec1d3280c48b39cba62f5497b5e"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "met"
+                    ]
+                ],
+                "manufacturer": "Met.no",
+                "model": "Forecast",
+                "name": "Forecast",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": "service",
+                "id": "d33e5ee2ba20a7811cf17064b750f10a",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "https://www.met.no/en"
+            },
+            {
+                "config_entries": [
+                    "ba8dfee1af1a27af7f1ba7faf2d563ad"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "c9426bfbaa4737ac"
+                    ]
+                ],
+                "manufacturer": "OnePlus",
+                "model": "ONEPLUS A5010",
+                "name": "ONEPLUS A5010",
+                "sw_version": "29",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "8cc23ce9481e353c05c851b150317052",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "89a90a2c959dbd63efed7c24a89c3a7e"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "core_almond"
+                    ]
+                ],
+                "manufacturer": "Official add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "Almond",
+                "sw_version": "2.0.1",
+                "hw_version": null,
+                "entry_type": "service",
+                "id": "ac2102338197d17923462458ac40d898",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "homeassistant://hassio/addon/core_almond"
+            },
+            {
+                "config_entries": [
+                    "89a90a2c959dbd63efed7c24a89c3a7e"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "a0d7b954_vscode"
+                    ]
+                ],
+                "manufacturer": "Home Assistant Community Add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "Studio Code Server",
+                "sw_version": "4.1.0",
+                "hw_version": null,
+                "entry_type": "service",
+                "id": "439e9dbda4bf2a66bb9c66afc206a8f8",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "homeassistant://hassio/addon/a0d7b954_vscode"
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "dc4f226073d9"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_NODEMCUV2",
+                "name": "esptemp01xyz",
+                "sw_version": "esphome v1.16.2 Nov 27 2021, 12:19:06",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "f971114b6f574cbbfaa63c938a9c5bea",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "e0e2e6ac8d3c"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "esp32dev",
+                "name": "ambientweather",
+                "sw_version": "esphome v2022.2.6 Mar  4 2022, 17:10:04",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "14feb5f7e1453bcf93d0c31ce30c76ce",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "d8bfc0143885"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_NODEMCUV2",
+                "name": "esponewire4x02",
+                "sw_version": "esphome v1.16.2 Dec 23 2021, 12:59:49",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "7c7ef6b2bbd5ac20deadda65a12a3d75",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "e8db84e2b9de"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "d1mini_np_flow",
+                "sw_version": "esphome v1.19.2 Jun 23 2021, 07:13:52",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "b52590773597e4d00c6a45f5607fa0df",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "2cf43214f0d4"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "d1_mini",
+                "name": "502-small",
+                "sw_version": "esphome v2021.10.3 Nov  5 2021, 16:04:30",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "4d3ad8990a6feefa22180797eb82df65",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "dc4f226073b4"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_NODEMCUV2",
+                "name": "esptemp0box1xyz",
+                "sw_version": "esphome v1.14.5 Aug  5 2020, 17:07:41",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "633d003780a93bd5a4ed52648988fbc1",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0004830745"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara vibration sensor (DJT11LM)",
+                "name": "0x00158d0004830745",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "8d53c5d5de2dcdfaac8064c0240e9916",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00124b0026b79630"
+                    ]
+                ],
+                "manufacturer": "SONOFF",
+                "model": "Zigbee two way smart switch (ZBMINI)",
+                "name": "0x00124b0026b79630",
+                "sw_version": "2.0.0",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "9d481342254cc35076b31e414ee973ba",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00124b002512277a"
+                    ]
+                ],
+                "manufacturer": "SONOFF",
+                "model": "Temperature and humidity sensor (SNZB-02)",
+                "name": "0x00124b002512277a",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "bca40263cc87a56d2864cdf3c116f6bb",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "10521c02d418"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_NODEMCU",
+                "name": "bueroklima-mqtt",
+                "sw_version": "esphome v1.16.2 Oct 25 2021, 07:40:35",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "47865fb4d579f2897ed65fe710020b00",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "2cf432445dde"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_NODEMCUV2",
+                "name": "esponewire01",
+                "sw_version": "esphome v1.14.2 Jul  8 2020, 10:44:25",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "8af846eb49912a2bdcd46e449f9b8a23",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "dc4f22607378"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_NODEMCUV2",
+                "name": "blauwe_sensorbox",
+                "sw_version": "esphome v1.14.2 Mar 22 2020, 13:21:40",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "26f8a764bbe17e9b3b85e3264168d3fa",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "485519009723"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "esp01_1m",
+                "name": "earbuds",
+                "sw_version": "esphome v2022.2.5 Mar 10 2022, 09:09:03",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "131370c2ce8007e03924bf73f48efbbf",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "2cf432445e16"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_NODEMCUV2",
+                "name": "esponewire2x03",
+                "sw_version": "esphome v1.16.2 Dec 22 2021, 18:18:30",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "8cdac42bcaec8c120e453774383c6e0e",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "40915145cb23"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "esp01_1m",
+                "name": "switch",
+                "sw_version": "esphome v2022.2.5 Mar 10 2022, 09:06:57",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "7dd442c2cc89dc6950ab32dd61356cac",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "2cf432445e62"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_NODEMCUV2",
+                "name": "esponewire4x01",
+                "sw_version": "esphome v1.16.2 Jun 10 2021, 20:49:33",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "656dcd4cf6baa8af6fafdc99010a0b82",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "84f3eb59e92a"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_NODEMCUV2",
+                "name": "tbfeen",
+                "sw_version": "esphome v1.14.2 Mar 30 2020, 17:43:22",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "c5f46f2a97aaf2e5aea9b564754fefd5",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "a4e57cb52072"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_NODEMCUV2",
+                "name": "espsds011x01",
+                "sw_version": "esphome v1.16.2 Feb  9 2022, 14:59:43",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "a2b9b182872e1bec102cdf42880724c0",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "dc4f226073eb"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_NODEMCUV2",
+                "name": "tbftwee",
+                "sw_version": "esphome v1.14.2 Mar 30 2020, 17:45:34",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "66a5fa42559c53d95725b11c9050fc1a",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "ecfabc6111f4"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "co2sensor04",
+                "sw_version": "esphome v1.14.2 Dec 19 2019, 22:48:11",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "76987bb7357a9ef5f2c856b17fa5ef9e",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "8caab57674b8"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "esp01_1m",
+                "name": "wemosmini3-temp",
+                "sw_version": "esphome v2021.10.3 Nov 18 2021, 14:00:55",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "a50c431a423a2c70bf231634ffb3bd88",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00124b00258a3ebe"
+                    ]
+                ],
+                "manufacturer": "SONOFF",
+                "model": "Zigbee smart plug (S26R2ZB)",
+                "name": "0x00124b00258a3ebe",
+                "sw_version": "2.0.1",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "869ce65f0cfec8a4a7739bb5e84fe007",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "d8bfc01438d2"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_NODEMCUV2",
+                "name": "espboxwire2x02",
+                "sw_version": "esphome v1.16.2 Dec 23 2021, 13:27:59",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "8cd8446aa1025d226980f372b81cd0d5",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "48551900e199"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "esp01_1m",
+                "name": "gsp370",
+                "sw_version": "esphome v2022.2.5 Mar  8 2022, 11:40:55",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "e297f63e0a5ddd7ab90f1c8221f9e050",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "83969E"
+                    ]
+                ],
+                "manufacturer": "Tasmota",
+                "model": "\u96f2\u5929\u8056\u7f85",
+                "name": "ESP01 4\u865f",
+                "sw_version": "10.0.0(tasmota)",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "02589a38ccc9b01a53199c29d90b581f",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "A3B7DD"
+                    ]
+                ],
+                "manufacturer": "Tasmota",
+                "model": "\u96f2\u5929\u8056\u7f85",
+                "name": "PC\u96fb\u6e90\u7ba1\u7406",
+                "sw_version": "11.0.0(tasmota)",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "b7313c6534dd55c0b834f623fc430747",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "77c3b0004c1c078ba460a6037bba6bed"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "3c6105cfdde9"
+                    ]
+                ],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "sven-salz-heim",
+                "sw_version": "esphome v1.16.2 Oct 17 2021, 18:24:36",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "fd400f32483802add8a124983526b6bd",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "89a90a2c959dbd63efed7c24a89c3a7e"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "core_samba"
+                    ]
+                ],
+                "manufacturer": "Official add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "Samba share",
+                "sw_version": "9.5.1",
+                "hw_version": null,
+                "entry_type": "service",
+                "id": "8189b149b51468b4f3c1f6fa69798127",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "homeassistant://hassio/addon/core_samba"
+            }
+        ],
+        "deleted_devices": []
+    }
+}

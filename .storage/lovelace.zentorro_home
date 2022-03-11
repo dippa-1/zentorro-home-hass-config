@@ -1,0 +1,50 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "lovelace.zentorro_home",
+    "data": {
+        "config": {
+            "title": "Zentorro Home",
+            "views": [
+                {
+                    "icon": "mdi:remote",
+                    "id": "home",
+                    "title": "Home",
+                    "cards": [
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "input_text.zentorro_new_device_name"
+                                },
+                                {
+                                    "entity": "input_text.zentorro_new_device_state"
+                                },
+                                {
+                                    "entity": "button.start_learning"
+                                }
+                            ],
+                            "title": "Add 433MHz Device"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "input_select.zentorro_control_device"
+                                },
+                                {
+                                    "entity": "input_select.zentorro_control_state"
+                                },
+                                {
+                                    "entity": "button.set_state"
+                                }
+                            ],
+                            "title": "433MHz Devices",
+                            "state_color": false
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

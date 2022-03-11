@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "minor_version": 1,
+    "key": "person",
+    "data": {
+        "items": [
+            {
+                "name": "Admin",
+                "user_id": "c775c3e89d48449abf6ccba39d7643b0",
+                "device_trackers": [
+                    "device_tracker.oneplus_a5010"
+                ],
+                "id": "admin"
+            }
+        ]
+    }
+}
