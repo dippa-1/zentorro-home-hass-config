@@ -54,3 +54,30 @@
       payload: i just got the database!
       retain: true
   mode: single
+- id: '1647186570344'
+  alias: Zentorro manual control
+  description: Manually control Zentorro Home devices with text fields
+  trigger:
+  - platform: state
+    entity_id: button.set_state_2
+  condition:
+  - condition: and
+    conditions:
+    - condition: not
+      conditions:
+      - condition: state
+        entity_id: input_text.zentorro_control_device_name
+        state: ''
+    - condition: not
+      conditions:
+      - condition: state
+        entity_id: input_text.zentorro_control_device_state
+        state: ''
+  action:
+  - service: mqtt.publish
+    data:
+      topic: 433MHzBridge/control
+      retain: true
+      payload: '{device: "{{states(''input_text.zentorro_control_device_name'' | string)}}",
+        state: "{{states(''input_text.zentorro_control_device_state'' | string)}}"}'
+  mode: single

@@ -12,19 +12,23 @@ scene: !include scenes.yaml
 button:
   # test:
   - platform: mqtt
-    command_topic: 433MHzBridge/pairing
+    command_topic: dump
     name: "Steckose Flur; ON"
     # command_topic: gen1/control/togglePause
     # payload_on: '/codeStart: {device: "Steckdose Flur", state: "on"}'
     # payload_off: "/codeStop"
   # zentorro_start_learning:
   - platform: mqtt
-    command_topic: 433MHzBridge/pairing
+    command_topic: dump
     name: "Start learning"
     icon: mdi:play-outline
   # zentorro_set_state:
   - platform: mqtt
-    command_topic: 433MHzBridge/pairing
+    command_topic: dump
+    name: "Set state"
+    icon: mdi:power
+  - platform: mqtt
+    command_topic: dump
     name: "Set state"
     icon: mdi:power
   
@@ -41,6 +45,14 @@ input_text:
     name: State
     mode: text
     icon: mdi:toggle-switch-outline
+  zentorro_control_device_state:
+    name: State
+    mode: text
+    icon: mdi:toggle-switch-outline
+  zentorro_control_device_name:
+    name: Device name
+    mode: text
+    icon: mdi:label-outline
 
 switch:
   - platform: mqtt
