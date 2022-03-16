@@ -36,7 +36,7 @@
   - service: mqtt.publish
     data:
       topic: 433MHzBridge/learn
-      retain: true
+      retain: false
       payload: '{device: "{{states(''input_text.zentorro_new_device_name'' | string)}}",
         state: "{{states(''input_text.zentorro_new_device_state'' | string)}}"}'
   mode: single
@@ -77,7 +77,7 @@
   - service: mqtt.publish
     data:
       topic: 433MHzBridge/control
-      retain: true
+      retain: false
       payload: '{device: "{{states(''input_text.zentorro_control_device_name'' | string)}}",
         state: "{{states(''input_text.zentorro_control_device_state'' | string)}}"}'
   mode: single

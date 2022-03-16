@@ -31,6 +31,10 @@ button:
     command_topic: dump
     name: "Set state"
     icon: mdi:power
+  - platform: mqtt
+    command_topic: 433MHzBridge/clear
+    name: "Clear database"
+    icon: mdi:delete-outline
   
 
 input_text:
@@ -56,11 +60,11 @@ input_text:
 
 switch:
   - platform: mqtt
-    command_topic: 433MHzBridge/pairing
-    payload_on: '{device: "{{states.input_text.text1}}", state: "on"}'
-    payload_off: ""
-    payload_available: ""
-    name: "Steckose Flur; ON"
+    command_topic: none
+    state_topic: 433MHzBridge/status
+    payload_on: "ON"
+    payload_off: "OFF"
+    name: "Learning status"
 
 input_select:
   who_cooks:
